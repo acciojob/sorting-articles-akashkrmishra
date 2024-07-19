@@ -1,5 +1,5 @@
 //your JS code here. If required.
-let list=document.querySelectorAll("#band > li");
+let list=document.querySelectorAll("#bands > li");
 
 console.log(list);
 let arr=[];
