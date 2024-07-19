@@ -14,16 +14,16 @@ const bands = [
   'Anywhere But Here',
   'An Old Dog'
 ];
-// function strip(bandName) {
-//   return bandName.replace(/^(a |an |the )/i, '').trim();
-// }
-// const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
-// const bandList = document.getElementById('bands');
-// sortedBands.forEach(band => {
-//   const li = document.createElement('li');
-//   li.textContent = band;
-//   bandList.appendChild(li);
-// });
+function strip(bandName) {
+  return bandName.replace(/^(a |an |the )/i, '').trim();
+}
+const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
+const bandList = document.getElementById('bands');
+sortedBands.forEach(band => {
+  const li = document.createElement('li');
+  li.textContent = band;
+  bandList.appendChild(li);
+});
 
 
 
@@ -41,9 +41,9 @@ const bands = [
 //     arr[i]=list[i].innerHTML;
 // }
 
-function strip(bandName){
-    return bandName.replace(/^(a |the |an)/i, "").trim();
-};
+// function strip(bandName){
+//     return bandName.replace(/^(a |the |an)/i, "").trim();
+// };
 
-const sortedBrands=bands.sort((a,b) => strip(a) > strip(b) ? 1: -1);
-console.log(sortedBrands);
+// const sortedBrands=bands.sort((a,b) => strip(a) > strip(b) ? 1: -1);
+// console.log(sortedBrands);
